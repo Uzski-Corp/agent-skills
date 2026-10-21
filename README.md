@@ -28,6 +28,37 @@ The skill inspects effective styles and behavior, maps components and data actio
 
 Supply access to both codebases and any required design assets. Missing backend integrations and deliberate deviations should be reported explicitly. Source review alone does not establish runtime or visual parity.
 
+## Programming Best Practices
+
+Apply production Go and Rust practices while writing or reviewing services: project layout, errors, concurrency, HTTP and GraphQL APIs, PostgreSQL, Redis, authentication, security, observability, testing, payments, and background jobs. The skill reads the reference that matches the task.
+
+### Install
+
+```sh
+npx skills add Uzski-Corp/agent-skills --skill programming-best-practices
+```
+
+### Use
+
+Ask your coding agent to use `programming-best-practices` and name the language and the change. For example:
+
+> Use programming-best-practices to add an idempotent payment endpoint in this Go service. Follow the existing project layout.
+
+The skill applies the patterns in the matching reference and checks its production checklist before finishing. Security references are for prevention and review.
+
+### Contents
+
+- [Skill instructions](skills/programming-best-practices/SKILL.md)
+- [Go](skills/programming-best-practices/references/golang-best-practices.md) and [advanced Go](skills/programming-best-practices/references/go-advanced-patterns.md)
+- [Rust](skills/programming-best-practices/references/rust-best-practices.md) and [advanced Rust](skills/programming-best-practices/references/rust-advanced-patterns.md)
+- [Web applications](skills/programming-best-practices/references/web-application-patterns.md), [API design](skills/programming-best-practices/references/api-design-patterns.md), and [databases](skills/programming-best-practices/references/database-engineering-patterns.md)
+- [Caching](skills/programming-best-practices/references/caching-performance-patterns.md), [API security](skills/programming-best-practices/references/api-security-patterns.md), and [web vulnerability prevention](skills/programming-best-practices/references/web-security-attacks-guide.md)
+- [Observability](skills/programming-best-practices/references/observability-patterns.md), [testing](skills/programming-best-practices/references/testing-patterns.md), and [payments, orders, and jobs](skills/programming-best-practices/references/real-world-project-patterns.md)
+- [Quick reference](skills/programming-best-practices/references/QUICK_REFERENCE.md)
+- [Go example config](skills/programming-best-practices/examples/go-api-example) and [Rust example config](skills/programming-best-practices/examples/rust-api-example)
+
+Source notes: [nutcas3/best-practices](https://github.com/nutcas3/best-practices), compiled from 100 Go Mistakes, Effective Go, the Rust API Guidelines, and OWASP.
+
 ## License
 
 [MIT](LICENSE) © 2026 Uzski Corp.
