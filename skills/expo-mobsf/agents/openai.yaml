@@ -1,0 +1,4 @@
+interface:
+  display_name: "Expo MobSF"
+  short_description: "Harden Expo Android apps and verify MobSF scores"
+  default_prompt: "Use $expo-mobsf to harden this Expo Android app and verify a release APK against a MobSF score target of 70."

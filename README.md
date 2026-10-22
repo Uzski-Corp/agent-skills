@@ -59,6 +59,29 @@ The skill applies the patterns in the matching reference and checks its producti
 
 Source notes: [nutcas3/best-practices](https://github.com/nutcas3/best-practices), compiled from 100 Go Mistakes, Effective Go, the Rust API Guidelines, and OWASP.
 
+## Expo MobSF
+
+Harden Expo Android release builds and remediate MobSF findings while preserving camera permissions, authentication, analytics, and other required features. Applies an Android 10 / API 29 baseline (or preserves a higher minimum), reviews full findings, and verifies the score against the actual release APK. The default target is 70; a passing score requires a fresh scan and is not guaranteed by configuration alone.
+
+### Install
+
+```sh
+npx skills add Uzski-Corp/agent-skills --skill expo-mobsf
+```
+
+### Use
+
+> Use expo-mobsf to harden this Expo Android app and verify a release APK against a MobSF score target of 70. Preserve required camera scanning and its permission recovery.
+
+For a new app, ask the skill to apply the baseline after project creation. The skill uses version-matched Expo docs and respects the project's build and testing permissions. APKs and scan reports stay outside this repository.
+
+### Contents
+
+- [Skill instructions](skills/expo-mobsf/SKILL.md)
+- [Expo Android configuration](skills/expo-mobsf/references/expo-android.md)
+- [Finding triage and scanning](skills/expo-mobsf/references/mobsf-workflow.md)
+- [Saved-report evidence helper](skills/expo-mobsf/scripts/record_evidence.py)
+
 ## License
 
 [MIT](LICENSE) © 2026 Uzski Corp.
