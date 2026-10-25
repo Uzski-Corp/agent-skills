@@ -1,6 +1,6 @@
 # Uzski Corp Agent Skills
 
-Reusable skills for design engineering and application development, maintained by [Uzski Corp](https://github.com/Uzski-Corp).
+Reusable skills for design engineering, application development and product communication, maintained by [Uzski Corp](https://github.com/Uzski-Corp).
 
 ## React to LiveView
 
@@ -81,6 +81,45 @@ For a new app, ask the skill to apply the baseline after project creation. The s
 - [Expo Android configuration](skills/expo-mobsf/references/expo-android.md)
 - [Finding triage and scanning](skills/expo-mobsf/references/mobsf-workflow.md)
 - [Saved-report evidence helper](skills/expo-mobsf/scripts/record_evidence.py)
+
+## Sean Product Copy
+
+Write clear product marketing copy for websites, ads, social carousels, app store screenshots, listings and promotional graphics. Uses English by default, with occasional conversational Swahili for suitable Kenyan audiences. Includes approved Bread and Corral examples and guidance for grounding claims in the actual product.
+
+### Install
+
+```sh
+npx skills add Uzski-Corp/agent-skills --skill sean-product-copy
+```
+
+### Use
+
+> Use sean-product-copy to write a six-slide Instagram carousel introducing this product. Read the product brief first, make each slide specific and end with the appropriate next action.
+
+### Contents
+
+- [Skill instructions](skills/sean-product-copy/SKILL.md)
+- [Voice examples and approved marketing directions](skills/sean-product-copy/references/voice-examples.md)
+
+## Sean Communication
+
+Draft concise, warm professional emails, proposals, outreach, client updates and scope discussions in Sean Motanya's voice. Builds confidence through clear scope and supportable facts, with courteous ways to negotiate changes.
+
+### Install
+
+```sh
+npx skills add Uzski-Corp/agent-skills --skill sean-communication
+```
+
+### Use
+
+> Use sean-communication to draft a brief email accompanying this proposal. Refer to the client's launch goals and use the scope and timeline in the proposal.
+
+### Contents
+
+- [Skill instructions](skills/sean-communication/SKILL.md)
+
+Both writing skills are self-contained and can be installed separately. Supply the relevant brief and product or client context. Drafting does not authorise sending messages, publishing content or changing agreements.
 
 ## License
 
